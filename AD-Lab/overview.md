@@ -23,7 +23,8 @@
 - Windows Server 2019 and Windows 10 OS
 
 ## Screenshots
-
+![ADUC OUs](ADUC.png)
+![Win10 Client Login](login_win10.png)
 
 ## What I Learned
 - How to set up a Windows Server as a Domain Controller

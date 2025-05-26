@@ -59,7 +59,6 @@
 ## Screenshots
 ![GPO Config](Disable_CMD_GPO.png)
 ![Shared Folder Permissions](Shared_Permissions.png)
-![Mapped Drive](MappedDrive_Client.png)
 ![OU Structure](OU_Structure.png)
 
 ## What I Learned

@@ -6,7 +6,7 @@
 - **Domain:** lab.local
 - **Network:** NAT with static IPs (DC01: 192.168.100.10, Client: 192.168.100.20)
 
-## Simulated Tasks Completed
+## Phase 1 & 2
 - Created Organizational Units (OUs): `HR`, `IT`, `Sales`, and `Disabled_Users`
 - Created user accounts with appropriate logon names (UPN and SAMAccountName):
   - Alice Smith (`asmith@lab.local`, `asmith`) in HR

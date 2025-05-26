@@ -33,3 +33,38 @@
 - Simulating help desk tasks: user logins, password resets, account enabling/disabling
 - Networking VMs in NAT mode for internal communication
 
+## Phase 3 – GPOs, File Shares, DHCP, and User Management
+
+### Group Policy
+- Created and linked a GPO (`Disable CMD for IT`) to the `IT` OU
+- Configured GPO to block Command Prompt via User Configuration settings
+- Verified application by logging into the client machine and testing policy behavior
+
+### Shared Folder & Network Drive
+- Created a shared folder `C:\Shared` on `DC01`
+- Configured share and NTFS permissions (Everyone - Read; `bjohnson` - Full Control)
+- Mapped the shared folder as a network drive on the Windows 10 client machine
+
+### User & OU Management
+- Used a PowerShell script to bulk-generate 1000+ AD users with default passwords
+- Created `_ADMINS` and `_USERS` organizational units
+- Moved `Eve Goff (egoff)` to `_ADMINS` and all other users to `_USERS`
+
+### DHCP and NAT Setup
+- Installed DHCP Server role on `DC01` and created an IP scope:
+  - Start IP: 192.168.100.20  
+  - End IP: 192.168.100.200
+- Enabled NAT for future simulation of outbound internet access
+
+## Screenshots
+![GPO Config](Disable_CMD_GPO.png)
+![Shared Folder Permissions](Shared_Permissions.png)
+![Mapped Drive](MappedDrive_Client.png)
+![OU Structure](OU_Structure.png)
+
+## What I Learned
+- Creating and linking GPOs to specific OUs
+- How to manage file and folder permissions using both share and NTFS settings
+- Mapping network drives for user convenience
+- Automating user creation in AD using PowerShell
+- Setting up DHCP scopes and basic NAT routing
